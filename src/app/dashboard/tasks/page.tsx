@@ -52,7 +52,7 @@ export default function TaskPage() {
             ))}
           </div>
         ) : (
-          <div className="text-gray-500">Threre are no tasks to display.</div>
+          <div className="text-gray-500 mt-10">Threre are no tasks to display.</div>
         )}
       </div>
     </>
