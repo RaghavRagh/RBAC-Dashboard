@@ -1,37 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RBAC-Dashboard
+
+This project is a Role-Based Access Control (RBAC) Task Management System built with [Next.js](https://nextjs.org). It allows administrators to manage users and tasks through a dynamic dashboard. Key features include user role management, task assignment, and task tracking, all designed with responsive and modern UI components.
+
+## Features
+
+### User Management
+- View a list of users and filter them by role or status (Active/Inactive).
+- Change user roles dynamically (Admin, Editor, User).
+- Delete users (Admin-only functionality).
+
+### Task Assignment
+- Assign tasks to users through a modal form specifying task title and description.
+- Tasks are linked to specific users for easy tracking.
+
+### Task Management
+- View all assigned tasks in a card-based layout on the Task Page.
+- Each task card displays the task title, description, and the user ID it is assigned to.
+- Admins can delete tasks directly from the Task Page.
+
+### Role-Based Access
+- Only Admin users have permission to manage users, assign tasks, and delete tasks.
+- Non-admin users have restricted access to certain features.
+
+### Responsive Design
+- The application is fully responsive, ensuring usability on desktops, tablets, and mobile devices.
+
+## Technologies Used
+- **Frontend**: Next.js, TypeScript, Tailwind CSS
+- **State Management**: React Hooks
+- **Other Tools**: Context API for role-based management
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to run the project locally.
+
+### Prerequisites
+Ensure you have the following installed:
+- Node.js >= 16
+- npm, yarn, or pnpm package manager
+
+### Installation
+Clone the repository and install dependencies:
 
 ```bash
-npm run dev
+git clone https://github.com/RaghavRagh/RBAC-Dashboard
+cd rbac-dashboard
+npm install
 # or
-yarn dev
+yarn install
 # or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# RBAC-Dashboard
+pnpm install

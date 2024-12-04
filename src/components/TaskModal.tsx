@@ -45,12 +45,7 @@ const TaskModal: React.FC<TaskModalProps> = ({ userId, onClose, onAssign }) => {
           <button onClick={handleSubmit} className="border rounded-md p-2 bg-slate-800 text-white px-3" disabled={role !== "Admin"}>Assign</button>
           <button
             onClick={onClose}
-            className={`border rounded-md p-2 px-3 ${
-              role === "Admin"
-                ? "border-red-400 text-red-400"
-                : "border-gray-400 text-gray-400"
-            }`}
-            disabled={role !== "Admin"}
+            className="border rounded-md p-2 px-3 border-red-400 text-red-400"
           >
             Cancel
           </button>
